@@ -1,0 +1,531 @@
+/* IMPORTS - googlefonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* END IMPORTS */
+
+
+/* GENERAL classes */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* END GENERAL classes */
+
+
+/* START aboutus classes */
+
+.aboutus-section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+
+.aboutus-container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 250px;
+}
+
+.aboutus-content-section{
+	float: left;
+	width: 55%;
+}
+
+.aboutus-title{
+	/*border-style: solid;
+	border-color: red;*/
+
+	text-transform: uppercase;
+	font-size: 48px;
+  color:#343434;
+
+}
+
+/* END aboutus classes */
+
+
+/* START aboutus image-section classes */
+
+.aboutus-image-section{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 80px;
+	float: right;
+	width: 40%;
+  text-align: center;
+}
+
+.aboutus-image-section .aboutus-name{
+  margin-top: 15px;
+  color:#5d5d5d;
+	font-size: 20px;
+}
+
+.aboutus-image-section img{
+	width: 60%;
+	height: auto;
+  border-radius: 5%;
+}
+
+.aboutus-image-section .aboutus-social{
+	margin-top: 20px;
+  text-align: center;
+}
+
+.aboutus-image-section .aboutus-social i{
+	color: #3d3d3d;
+	font-size: 30px;
+	padding:0px 10px;
+}
+
+.aboutus-image-section .aboutus-social i:hover{
+	color:#5d5d5d;
+}
+
+/* END aboutus image-section classes */
+
+
+/* START aboutus content-section classes */
+
+.aboutus-content p{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 80px;
+	padding-top: 0px;
+	color:#5d5d5d;
+	font-size: 32px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* END aboutus content-section classes */
+
+
+/* START artworks section classes */
+
+.artworks-section{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.artworks-container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+}
+
+.artworks-content-section{
+	float: left;
+	width: 50%;
+}
+
+.artworks-content-section2{
+	float: right;
+	width: 50%;
+}
+
+/* END artworks section classes */
+
+
+/* START content-section classes */
+
+.artworks-content-section .artworks-content p{
+	margin-top: 30px;
+}
+
+.artworks-content-section2 .artworks-content2 p{
+	margin-top: 30px;
+}
+
+/* END content-section classes */
+
+
+/* START nav-bar classes */
+
+.navBar {
+  display: flex;
+	position: fixed;
+	overflow: hidden;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-left: 10px;
+	height: 168px;
+	box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navBar box-shadow {
+	opacity: 25%;
+}
+
+.gallery{
+    color:#858484;
+    text-shadow: 1px 1px 4px #ffffff;
+    font-size: 36px;
+    letter-spacing: 3px;
+    width: 70%;
+  }
+
+	.gallery a{
+		color: #858484;
+		letter-spacing: 2px;
+		text-decoration: none;
+	}
+
+	.gallery h3{
+		/*border-style: solid;
+		border-color: red;*/
+
+		margin-top: 71px;
+		margin-left: 100px;
+	}
+
+  .gallery-links{
+		/*border-style: solid;
+		border-color: red;*/
+
+    display: flex;
+    justify-content: space-around;
+    width: 20%; /*espaco entre links about & contact*/
+		font-size: 30px;
+		text-decoration: none;
+		margin-top: 71px;
+		margin-right: 100px;
+  }
+
+  .gallery-links li{
+    list-style: none; /*tirar a decoracao que aparecia atras dos links- bolas*/
+  }
+
+  .gallery-links a{
+    color: #858484;
+    letter-spacing: 2px;
+		text-decoration: none;
+  }
+
+  .gallery-links a:hover{
+	color:#5d5d5d;
+	text-decoration: none;
+  }
+
+/* END nav-bar classes */
+
+
+/* START about artist classes */
+
+.artist-section{
+	/*border-style: solid;
+	border-color: red;*/
+
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+
+.artist-container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 250px;
+}
+
+.artist-content-section{
+	float: left;
+	width: 60%;
+}
+
+.artist-content {
+
+}
+
+.artist-title {
+	/*border-style: solid;
+	border-color: red;*/
+
+	text-transform: uppercase;
+	font-size: 22px;
+  color:#343434;
+	width: 40%;
+  text-align: center;
+}
+
+.artist-btn {
+	float: left;
+  background-color: #ffffff;
+  border-style: solid;
+	border-color: #555555;
+	border-radius: 15px;
+  color: #555555;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+	margin-top: 20px;
+}
+
+.artist-btn:hover {
+  background-color: #555555;
+  color: white;
+}
+
+/* END about artist classes */
+
+/* START artist image-section classes */
+
+.artist-image-section{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 80px;
+	float: left;
+	width: 40%;
+  text-align: center;
+}
+
+.artist-image-section img{
+	width: 60%;
+	height: auto;
+  border-radius: 5%;
+}
+
+/* END artist image-section classes */
+
+
+/* START artist content-section classes */
+
+.artist-content p{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 80px;
+	padding-top: 0px;
+	color:#5d5d5d;
+	font-size: 26px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* END artist content-section classes */
+
+
+/* START contact us classes */
+
+.contact-section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ffffff;
+}
+
+.contact-container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 250px;
+}
+
+.contact-content-section{
+	/*border-style: solid;
+	border-color: red;*/
+
+	float: left;
+	width: 55%;
+	margin-top: 80px;
+}
+
+.contact-title{
+	/*border-style: solid;
+	border-color: red;*/
+
+	text-transform: uppercase;
+	font-size: 48px;
+  color:#343434;
+}
+
+/* END contact us classes */
+
+/* START contact us formulario classes */
+
+.contact-form {
+  max-width: 600px;
+  padding: 0px 50px;
+  /*overflow: hidden;*/
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 10px;
+    border:0;
+    background: rgb(243, 243, 243);
+    padding: 20px 40px;
+    outline: none;
+    color: #858484; /* texto escrito*/
+    transition: 0.5s;
+		margin-bottom: 35px;
+		box-shadow: 0 0 20px 1px #aca7a7;
+		border-radius: 15px;
+		font-size: 15px;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #aca7a7;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+/*
+.contact-form-btn{
+    float:right;
+    background: #686868;
+    color: #ffffff;
+    transition: 0.5s;
+    transition-property: all;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.3s;
+    margin-top: 0px;
+    cursor: pointer;
+    border-radius: 15px;
+		width: 80px;
+		height: 40px;
+}
+*/
+/*
+.contact-form-btn:hover{
+  background:#6a8eb8;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 2%;
+  box-shadow:  #f9ecec 2px 2px 2px 2px;
+}
+*/
+
+.contact-form-btn {
+	float: right;
+  background-color: #ffffff;
+  border-style: solid;
+	border-color: #555555;
+	border-radius: 15px;
+  color: #555555;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.contact-form-btn:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+
+/* END contact us formulario classes */
+
+/* START contact us image section classes */
+
+.contact-image-section{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 80px;
+	float: right;
+	width: 40%;
+  text-align: center;
+}
+
+.contact-image-section img{
+	width: 60%;
+	height: auto;
+  border-radius: 5%;
+}
+
+/* END contact us image section classes */
+
+/* END contact us classes */
+
+
+/*** START MEDIA QUERIES ***/
+
+@media screen and (max-width: 768px){
+
+/* START artworks section MEDIA QUERIES */
+
+.artworks-container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 50px;
+}
+
+.artworks-content-section{
+	float:none;
+	width:50%;
+	display: block;
+	margin:auto;
+}
+
+.artworks-content-section2{
+	float:none;
+	width:50%;
+	display: block;
+	margin:auto;
+}
+
+/* START aboutus section MEDIA QUERIES */
+
+.aboutus-container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+
+.aboutus-content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+
+.aboutus-image-section{
+	float:none;
+	width:100%;
+
+}
+
+.aboutus-image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+
+.aboutus-content .aboutus-title{
+	text-align: center;
+	font-size: 19px;
+}
+
+.aboutus-content-section .aboutus-social{
+	text-align: center;
+}
+
+/* END aboutus section MEDIA QUERIES */
+
+}
+/*** END MEDIA QUERIES ***/

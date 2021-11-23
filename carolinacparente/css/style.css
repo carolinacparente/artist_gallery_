@@ -1,0 +1,146 @@
+/* IMPORTS - googlefonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+/* END IMPORTS */
+
+
+/* GENERAL classes */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* END GENERAL classes */
+
+
+/* START main classes */
+
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
+}
+
+.container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 100px;
+}
+
+.content-section{
+	float: left;
+	width: 55%;
+}
+
+/* END main classes */
+
+
+/* START container classes */
+
+.container .title{
+	text-transform: uppercase;
+	font-size: 28px;
+  margin-bottom: 30px;
+  color:#343434;
+}
+
+/* END container classes */
+
+
+/* START image-section classes */
+
+.image-section{
+	float: right;
+	width: 40%;
+  text-align: center;
+}
+
+.image-section .name{
+  margin-top: 15px;
+  font-family: 'Poppins', ;
+  color:#5d5d5d;
+}
+
+.image-section img{
+	width: 80%;
+	height: auto;
+  border-radius: 5%
+}
+
+.image-section .social{
+	margin-top: 20px;
+  text-align: center;
+}
+
+.image-section .social i{
+	color: #3d3d3d;
+	font-size: 30px;
+	padding:0px 10px;
+}
+
+.image-section .social i:hover{
+	color:#5d5d5d;
+}
+
+/* END image-section classes */
+
+
+/* START content-section classes */
+
+.content-section .content h3{
+	margin-top: 30px;
+	color:#5d5d5d;
+	font-size: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* END image-section classes */
+
+
+/* SART MEDIA QUERIES */
+
+@media screen and (max-width: 768px){
+
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+
+.image-section{
+	float:none;
+	width:100%;
+
+}
+
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+
+.content .title{
+	text-align: center;
+	font-size: 19px;
+}
+
+.content-section .social{
+	text-align: center;
+}
+
+/* END MEDIA QUERIES */
