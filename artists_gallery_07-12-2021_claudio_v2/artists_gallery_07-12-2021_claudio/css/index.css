@@ -1,0 +1,244 @@
+/* IMPORTS - googlefonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* END IMPORTS */
+
+
+/* GENERAL classes */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+
+	scroll-behavior: smooth;
+}
+
+/* END GENERAL classes */
+
+
+
+/* START nav-bar classes */
+
+.navBar {
+	/*border-style: solid;
+	border-color: red;*/
+
+  display: flex;
+	position: fixed;
+	overflow: hidden;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-left: 10px;
+	height: 128px;
+	box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navBar box-shadow {
+	opacity: 25%;
+}
+
+.gallery{
+	/*border-style: solid;
+	border-color: green;*/
+
+  color:#595959;
+  text-shadow: 1px 1px 2px #aca7a7;
+  font-size: 36px;
+  letter-spacing: 2px;
+  width: 50%;
+
+}
+
+.gallery a{
+	color: #595959;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+.gallery h3{
+	/*border-style: solid;
+	border-color: red;*/
+
+	padding-top: 40px;
+	padding-left: 100px;
+}
+
+.gallery-links{
+	/*border-style: solid;
+	border-color: blue;*/
+
+  display: flex;
+  justify-content: right;
+  width: 80%; /*espaco entre links about & contact*/
+	font-size: 30px;
+	text-decoration: none;
+	padding-top: 50px;
+	margin-right: px;
+}
+
+  .gallery-links li{
+    list-style: none; /*tirar a decoracao que aparecia atras dos links- bolas*/
+		margin-right: 80px;
+	}
+
+  .gallery-links a{
+    color: #858484;
+    letter-spacing: 2px;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px #aca7a7;
+  }
+
+  .gallery-links a:hover{
+	color:#5d5d5d;
+	text-decoration: none;
+
+	transform: scale(1.2);
+	text-shadow: 2px 2px 8px #aca7a7;
+  }
+
+	.first-link {
+		/*border-style: solid;
+		border-color: green;*/
+
+		margin-left: px;
+	}
+
+	.second-link {
+		/*border-style: solid;
+		border-color: green;*/
+
+		margin-right: px;
+	}
+
+/* END nav-bar classes */
+
+
+
+
+
+.carousel_slide {
+  display: none;  /* mostra um nome de cada vez */
+}
+
+
+img {
+  object-fit: cover; /*cobrir ecra mas nao ficar com a imagem esticada*/
+  width: 100vw; /* imagem terminar onde termina o ecra, largura*/
+  height: 100vh; /* imagem terminar onde termina o ecra, altura*/
+
+}
+
+/* Slideshow container */
+.carousel {
+  max-width: 100%;
+  max-height: 80%;
+
+}
+
+
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+  /*border-style: solid;
+	border-color: red;*/
+  position: absolute;
+  top: 0%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none; /*permite cursor sobre setas */
+  background-color: #2c2c2c00;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #00000000;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 120px;
+  position: absolute;
+  bottom: 300px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 23px #000000;
+}
+
+
+
+.dots_container{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Features dos dots */
+.dot {
+
+  border: 2px solid rgb(255, 255, 255);
+
+  height: 15px; /* altura dos dots*/
+  width: 15px; /* largura dos dots*/
+  margin: 0 8px; /* espaço entre dots*/
+
+  background-color: transparent;
+  border-radius: 50%; /* forma circilar*/
+  display: inline-block; /*coloca pontos num contentor*/
+}
+
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+
+/*** START MEDIA QUERIES ***/
+
+@media screen and (max-width: 768px){
+
+  /* START artworks section MEDIA QUERIES */
+
+  .gallery h3{
+font-size: 12px;
+}
+
+.gallery-links{
+  /*border-style: solid;
+  border-color: green;*/
+
+  font-size: 10px;
+
+  padding-right: 100px;
+}
+
+.text {
+
+  font-size: 60px;
+  bottom: 400px;
+  width: 100%;
+
+}
+
+
+  /* START aboutus section MEDIA QUERIES */
+
+
+  /* END aboutus section MEDIA QUERIES */
+
+  }
+  /*** END MEDIA QUERIES ***/

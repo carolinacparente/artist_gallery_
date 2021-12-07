@@ -1,0 +1,282 @@
+/* IMPORTS - googlefonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* END IMPORTS */
+
+
+/* GENERAL classes */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* END GENERAL classes */
+
+/* START nav-bar classes */
+
+.navBar {
+  display: flex;
+	position: fixed;
+	overflow: hidden;
+	background-color: #ffffff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-left: 10px;
+	height: 128px;
+	box-shadow: 0px 4px 12px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navBar box-shadow {
+	opacity: 25%;
+}
+
+.gallery{
+	/*border-style: solid;
+	border-color: red;*/
+
+  color:#858484;
+  text-shadow: 1px 1px 2px #aca7a7;
+  font-size: 36px;
+  letter-spacing: 2px;
+  width: 50%;
+  }
+
+	.gallery a{
+		color: #858484;
+		letter-spacing: 2px;
+		text-decoration: none;
+	}
+
+	.gallery h3{
+		/*border-style: solid;
+		border-color: red;*/
+
+		padding-top: 40px;
+		padding-left: 100px;
+	}
+
+  .gallery-links{
+		/*border-style: solid;
+		border-color: green;*/
+
+    display: flex;
+    justify-content: space-around;
+    width: 50%; /*espaco entre links about & contact*/
+		font-size: 30px;
+		text-decoration: none;
+		padding-top: 50px;
+		margin-right: px;
+  }
+
+  .gallery-links li{
+    list-style: none; /*tirar a decoracao que aparecia atras dos links- bolas*/
+  }
+
+  .gallery-links a{
+    color: #858484;
+    letter-spacing: 2px;
+		text-decoration: none;
+		text-shadow: 1px 1px 2px #aca7a7;
+  }
+
+  .gallery-links a:hover{
+	color:#5d5d5d;
+	text-decoration: none;
+  }
+
+	.link {
+		/*border-style: solid;
+		border-color: green;*/
+
+		margin-left: 400px;
+	}
+
+/* END nav-bar classes */
+
+  /* START about project classes */
+
+.project-container{
+	width: 80%;
+	display: block;
+	margin: auto;
+	padding-top: 150px;
+
+}
+
+.project-content-section{
+	float: left;
+	width: 40%;
+}
+
+.project-content {
+
+}
+
+.project-title {
+	/*border-style: solid;
+	border-color: red;*/
+   margin-top: 60px;
+	text-transform: uppercase;
+	font-size: 22px;
+    color:#343434;
+	width: 40%;
+    text-align: left;
+}
+
+/* END about project classes */
+
+/* START project image-section classes */
+
+.project-image-section{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 60px;
+	float: left;
+	width: 60%;
+    text-align: left;
+}
+
+.project-image-section img{
+	width: 70%;
+	height: auto;
+    border-radius: 5%;
+}
+
+/* END project image-section classes */
+
+
+/* START project content-section classes */
+
+.project-content p{
+	/*border-style: solid;
+	border-color: red;*/
+
+	margin-top: 60px;
+	margin-bottom: 20px;
+	color:#5d5d5d;
+	font-size: 26px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* END project content-section classes */
+
+ /* START artworks section classes */
+
+ button:hover span {
+    width: 100%;
+  }
+  
+  button:hover {
+    border: none;
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 100%;
+    padding: 200px;
+    display: flex;
+    overflow-x: auto;
+    padding-left: 130px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .slider-container::-webkit-scrollbar-thumb {
+    background: rgb(131, 131, 131); 
+    border-radius: 5%;
+  }
+
+  .slider-container::-webkit-scrollbar-thumb:hover {
+    background: #494949; 
+  }
+  
+  .slider-image-container {
+    flex: 0 0 auto;
+    width: 25%;
+    height: 25%;
+    padding: 20px;
+  }
+  
+  .slider-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    border-radius: 5%;
+  }
+  
+  .slider-image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+ /* END artworks section classes */
+
+@media screen and (max-width: 768px){
+
+    .project-container{
+      padding-top: 110px;
+    
+    }
+
+    .project-title {
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .project-image-section{
+        width: 100%;
+    }
+
+    .project-image-section img{
+        width: 100%;
+    }
+
+    .project-content-section{
+        width: 100%;
+    }
+
+    .project-content p{
+      margin-top: 30px;
+      font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    .artworks-section{
+        display: grid;
+    }
+    
+    .imag-container{
+        padding: 20px;
+    }
+
+    .slider-container {
+      padding: 10px;
+      padding-left: 13px;
+      padding-bottom: 10px;
+    }
+
+    .slider-image {
+      border-radius: 10%;
+    }
+
+    .slider-image-container {
+      padding: 5px;
+    }
+
+}
